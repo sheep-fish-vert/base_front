@@ -96,6 +96,8 @@ input, textarea{
 }
 
 //  example -> @include font-face('PFDinTextPro', 'PFDinTextPro-Bold', 700, italic);
-
+@include font-face('Lato', 'LatoRegular', 400);
+@include font-face('Lato', 'LatoBold', 700);
+@include font-face('MetaPro', 'MetaPro-Black', 800);
 
 /*/fonts*/
