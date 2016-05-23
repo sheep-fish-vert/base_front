@@ -1,1 +1,52 @@
 /*heder*/
+    header{
+        .top-head{ display: flex; justify-content: space-between; height: 125px;
+            p{margin: 0;}
+            .left{padding: 23px 0 0;
+                .txt{font:400 14px/17px 'Lato'; color:#4f4f4f;max-width: 195px; display: inline-block; vertical-align: top;    padding: 13px 0 0 15px;}
+                .img{ display: inline-block; vertical-align: top;}
+            }
+            .center{padding-right: 42px;
+                .txt{font:400 18px/31px 'Lato'; color:#4f4f4f;  display: inline-block; vertical-align: top; position: relative;
+                    b{ color: #9b1915; white-space: nowrap}
+                }
+                .tleft{text-align: right;padding: 28px 32px 0 0;
+                    b{font-size: 30px;}
+                    &:before{ content: ''; position: absolute; width: 2px; height: 80px; right: 0; top: 22px; display: block; background-color: #ffe5e5;}
+                }
+                .tright{padding: 27px 0 0 24px;     line-height: 23px;
+                    b{font-size: 24px;}
+                }
+            }
+            .right{    padding: 36px 3px 0 0;
+                p{font:400 19px/27px 'Lato'; color:#4f4f4f;}
+                a{font:700 30px/30px 'Lato'; color:#4f4f4f; text-decoration: none;}
+            }
+            .item{ display: inline-block; vertical-align: top;}
+        }
+        nav{ background-color: #9b1915; width: 100%;
+            ul{ margin: 0;     padding: 0; list-style-type: none; }
+            li{ display: inline-block; vertical-align: top;  position: relative;
+                &:first-child{
+                    a{padding-left: 0;}
+                }
+                &:last-child{
+                    a{padding-right: 0;
+                        &:before{ display: none;}
+                    }
+                }
+            }
+            a{font: 700 14px/14px 'Lato'; color: #fff; text-decoration: none; text-transform: uppercase; width: 100%; padding: 28px 27px;height: 70px; display: block; position: relative;
+                &:before{content:''; position: absolute; display: block; width: 2px; height: 35px; background-color: #af4744; right: 0; top: 16px;}
+                span {  position: relative; padding: 0 12px;
+                    &:before { content: ''; position: absolute; display: block; width: 100%; background-color: #fff; height: 4px; bottom: -10px; transform: scaleX(0); transition: transform 300ms; }
+
+                }
+                &.active,
+                &:hover {
+                    span:before { transform: scaleX(1); }
+                }
+            }
+        }
+    }
+/*END heder*/
