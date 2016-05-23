@@ -7,8 +7,14 @@
 @media screen and (max-width: 1366px){
 
 }
-@media screen and (max-width: 1280px){
-
+@media screen and (max-width: 1180px){
+    /*heder*/
+    header{
+        nav{
+            a{ padding: 28px 12px; }
+        }
+    }
+    /*END heder*/
 }
 @media screen and (max-width: 1024px){
 

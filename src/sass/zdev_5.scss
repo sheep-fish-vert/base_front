@@ -24,9 +24,9 @@
             }
             .item{ display: inline-block; vertical-align: top;}
         }
-        nav{ background-color: #9b1915; width: 100%;
-            ul{ margin: 0;     padding: 0; list-style-type: none; }
-            li{ display: inline-block; vertical-align: top;  position: relative;
+        nav{ background-color: #9b1915; width: 100%; text-align: center;
+            ul{ margin: 0;     padding: 0; list-style-type: none; display: inline-block;}
+            li{ display: inline-block; vertical-align: top;  position: relative; margin-left: -4px;
                 &:first-child{
                     a{padding-left: 0;}
                 }
@@ -36,7 +36,7 @@
                     }
                 }
             }
-            a{font: 700 14px/14px 'Lato'; color: #fff; text-decoration: none; text-transform: uppercase; width: 100%; padding: 28px 27px;height: 70px; display: block; position: relative;
+            a{font: 700 14px/14px 'Lato'; color: #fff; text-decoration: none; text-transform: uppercase; width: 100%; padding: 28px 22px;height: 70px; display: block; position: relative;
                 &:before{content:''; position: absolute; display: block; width: 2px; height: 35px; background-color: #af4744; right: 0; top: 16px;}
                 span {  position: relative; padding: 0 12px;
                     &:before { content: ''; position: absolute; display: block; width: 100%; background-color: #fff; height: 4px; bottom: -10px; transform: scaleX(0); transition: transform 300ms; }
