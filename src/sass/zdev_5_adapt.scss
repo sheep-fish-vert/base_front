@@ -15,18 +15,90 @@
         }
     }
     /*END heder*/
+    /*footer*/
+        footer{
+            nav{
+                a{ padding: 28px 12px; }
+            }
+        }
+    /*END footer*/
 }
 @media screen and (max-width: 1024px){
+    /*heder*/
+    header{
+        .butter-wrap{ display: block;}
+        nav{  position: absolute; left: 0; top:145px; height: 420px; display: none; z-index:999;
 
+            ul{ }
+            li{ display: block; margin-left: 0;
+                a{padding:20px 0;
+                    &:before{ display: none;}
+                    span{ display: block; width: 100%;
+                        &:before{ left: 0;}
+                    }
+                }
+            }
+
+        }
+    }
+    /*END heder*/
+    /*footer*/
+        footer{
+            .butter-wrap-foot{ display: block;}
+            nav{  position: absolute; left: 0; bottom:145px; height: 420px; display: none; z-index:999;
+
+                ul{ }
+                li{ display: block; margin-left: 0;
+                    a{padding:20px 0;
+                        &:before{ display: none;}
+                        span{ display: block; width: 100%;
+                            &:before{ left: 0;}
+                        }
+                    }
+                }
+
+            }
+        }
+    /*END footer*/
 }
 @media screen and (max-width: 992px){
 
+    /*heder*/
+        header{
+            .top-head{
+                .center{ display: none;}
+            }
+            .mobile-text{ display: block;}
+            .butter-wrap{  top: 76px; }
+            nav{ top: 176px;}
+        }
+    /*END heder*/
 }
 @media screen and (max-width: 767px){
 
 }
 @media screen and (max-width: 666px){
-
+    /*heder*/
+        header{
+            .top-head{ display: block; height:auto;
+                .left{ display: block; width: 100%;}
+                .right{ display: block; width: 100%; text-align: center;}
+            }
+            .mobile-text{ display: none;}
+            .butter-wrap{ top: 97px; }
+            nav{ top: 136px;}
+        }
+    /*END heder*/
+    /*footer*/
+        footer{
+            .top-head{ display: block; height:auto;
+                .left{ display: block; width: 100%;}
+                .right{ display: block; width: 100%; text-align: center;    padding: 3px 3px 25px 0;}
+            }
+            .butter-wrap-foot{ top: -16px;}
+            nav{bottom: 226px;}
+        }
+    /*END footer*/
 }
 @media screen and (max-width: 479px){
 
