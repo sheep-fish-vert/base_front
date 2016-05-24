@@ -137,6 +137,61 @@
 /*index-map*/
     .index-map{ width: 100%; height: 650px; position: relative;
         #map{ width: 100%;height: 100%;}
-        .title-map{font: 800 43px/43px 'MetaPro'; color: #4f4f4f; text-align: center; width: 100%; max-width: 700px; height: 100px; background-color: #fff; position: absolute; top: 69px;z-index: 100; border-radius:50px; margin: 0 auto; left:50%; transform:translateX(-50%);    padding-top: 29px; box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);}
+        .title-map-wrap{padding: 0 20px;position: absolute; top: 69px;z-index: 100;width: 100%; }
+        .title-map{font: 800 43px/43px 'MetaPro'; color: #4f4f4f; text-align: center;  max-width: 700px; height: 100px; background-color: #fff; border-radius:50px; margin: 0 auto;     padding-top: 29px; box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);}
 }
 /*END index-map*/
+/*p2b1*/
+    .p2b1{ background-image: url(../images/p2b1bg.jpg); background-size: cover; background-position: center top;padding-bottom: 74px;
+        .title{font: 800 32px/58px 'MetaPro';   text-align: center;    width: 100%;color: #fff; padding-top: 94px; max-width: 790px;margin: 0 auto 65px;
+            h2{ margin: 0;}
+            b{color:#e18c44;}
+        }
+        .content{ position: relative; width: 100%;
+            &:before{ position: absolute; content: ''; max-width: 1360px; width: 95%; height:calc(100% - 119px); top: 82px; left: 50%; transform: translateX(-50%); background-color: transparent; border: 5px dotted rgba(62,181,241,0.3); border-radius: 95px;}
+        }
+        .items-wrap { display: flex; justify-content: space-around;    padding-bottom: 70px; flex-wrap: wrap;
+            .item { max-width: 260px; display: inline-block; padding-bottom: 45px;}
+            .img { text-align: center;    margin-bottom: 32px;}
+            .txt {font: 400 18px/22px 'Lato'; color: #fff; position: relative; text-align: center; width: 100%;    padding-bottom: 15px;
+                &:before{content: ''; position: absolute; width: 150px; height: 2px; background-color: #e18c44; display: block; bottom: 0; left: calc(50% - 75px);}
+                p { margin: 0; }
+            }
+        }
+        .button-wrap{ position: relative; z-index:100;padding: 0 10px;
+            a{ display: block; text-transform: uppercase;font: 700 18px/18px 'Lato'; color: #fff; text-decoration: none; text-align: center;max-width: 355px; height: 74px; border:5px solid #e18c44; border-radius: 9px; margin: 0 auto; background-image: url(../images/p2b1bg.jpg);  background-position: center 84%; padding-top: 22px;
+                &:hover{ background: #e18c44; }
+            }
+        }
+
+
+    }
+/*END p2b1*/
+/*breadcrumbs*/
+.main{ position: relative;}
+    .breadcrumbs{color:#e18c44; font: 700 16px/20px 'Lato'; position: absolute; width: 100%; top: 10px; z-index:2;
+        a{color:#fff; text-decoration: none;}
+    }
+/*END breadcrumbs*/
+/*p2b4*/
+    .p2b4{background-image: url(../images/p2b4bg.png); background-size: cover; background-position: center top; min-height: 820px;
+        .title{font: 800 29px/50px 'MetaPro';   text-align: center;    width: 100%;color: #fff; padding-top: 95px; margin: 0 auto 96px;
+            h2{ margin: 0;}
+        }
+        .items-wrap { display: flex; justify-content: space-around;
+            ul{ margin: 0; padding: 0;list-style-type: none; display: flex; justify-content: space-around; width: 100%; padding-top: 100px; flex-shrink: 100;
+                li{ width: 4px; height: 4px; background-color: #93653c; display: inline-block; border-radius: 50%; vertical-align: top;
+                &:first-child{ width: 10px; height: 10px; margin-top: -3px;}
+                &:last-child{ width: 19px; height: 19px; margin-top: -3px; background-color: transparent; border-top:2px solid #93653c; border-right:2px solid #93653c; transform:rotate(45deg); border-radius:0; margin-top: -7px;     margin-left: -19px; }
+                }
+            }
+            .item { max-width: 285px; display: inline-block; padding-bottom: 100px; width: 100%;flex-shrink: 66;}
+            .img { text-align: center;    margin-bottom: 24px;}
+            .txt {font: 400 20px/24px 'Lato'; color: #fff; position: relative; text-align: center; width: 100%;    padding-bottom: 28px;
+                &:before{content: ''; position: absolute; width: 150px; height: 2px; background-color: #e18c44; display: block; bottom: 0; left: calc(50% - 75px);}
+                p { margin: 0; }
+                &:after{ position: absolute; bottom: -50px;font: 400 24px/24px 'Lato'; color: #5f4d34; content: attr(data-digit); left:50%; transform:translateX(-50%);}
+            }
+        }
+    }
+/*END p2b4*/
