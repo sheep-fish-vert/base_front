@@ -78,8 +78,11 @@ $(document).ready(function(){
     butter($('.butter'), $('header nav'));
     buterMissClick($('.butter'), $('header nav'));
     butter($('.butter-foot'), $('footer nav'));
-    buterMissClick($('.butter-foot'), $('footer nav'));
-    initMap();
+    buterMissClick($('.butter-foot'), $('footer nav'))
+    if($('#map').length>0){
+        initMap();
+    }
+
 });
 
 $(window).load(function(){
