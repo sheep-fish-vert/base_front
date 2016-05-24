@@ -1,5 +1,5 @@
 /*heder*/
-    header{
+    header{ position: relative;
         .top-head{ display: flex; justify-content: space-between; height: 125px;
             p{margin: 0;}
             .left{padding: 23px 0 0;
@@ -24,7 +24,29 @@
             }
             .item{ display: inline-block; vertical-align: top;}
         }
+        .mobile-text{font:400 18px/31px 'Lato'; color:#4f4f4f; text-align: center; display: none;
+            p{ margin: 0;}
+            b{ color: #9b1915; white-space: nowrap}
+
+        }
+        .butter-wrap{ position: absolute;   left: calc(50% - 23px); z-index:999;          top: 106px; display: none;}
+        .butter{background-color: #9b1915; position: absolute;  width: 42px; height: 36px; cursor: pointer; transition: all 300ms;
+            p{ padding: 0; margin: 0; height: 4px; width: 30px; background-color: #fff; position: absolute; display: block; left: 6px; opacity:1; transform: rotate(0deg); transition: all 300ms;
+                &:nth-child(1){ top: 6px;}
+                &:nth-child(2){ top: 16px;}
+                &:nth-child(3){ top: 26px;}
+            }
+            &:hover{ background-color: #4E1E1D;}
+            &.active{
+                p{
+                    &:nth-child(1){  transform: rotate(405deg);top: 16px; }
+                    &:nth-child(2){  transform: rotate(360deg); opacity:0;}
+                    &:nth-child(3){  transform: rotate(315deg);top: 16px;}
+                }
+            }
+        }
         nav{ background-color: #9b1915; width: 100%; text-align: center;
+
             ul{ margin: 0;     padding: 0; list-style-type: none; display: inline-block;}
             li{ display: inline-block; vertical-align: top;  position: relative; margin-left: -4px;
                 &:first-child{
@@ -35,6 +57,7 @@
                         &:before{ display: none;}
                     }
                 }
+                &.active{a>span:before { transform: scaleX(1); }}
             }
             a{font: 700 14px/14px 'Lato'; color: #fff; text-decoration: none; text-transform: uppercase; width: 100%; padding: 28px 22px;height: 70px; display: block; position: relative;
                 &:before{content:''; position: absolute; display: block; width: 2px; height: 35px; background-color: #af4744; right: 0; top: 16px;}
@@ -50,3 +73,64 @@
         }
     }
 /*END heder*/
+/*footer*/
+    footer{ position: relative;
+        .top-head{ display: flex; justify-content: space-between; height: 125px;
+            p{margin: 0;}
+            .left{padding: 23px 0 0;
+                .txt{font:400 14px/17px 'Lato'; color:#4f4f4f;max-width: 195px; display: inline-block; vertical-align: top;    padding: 13px 0 0 15px;}
+                .img{ display: inline-block; vertical-align: top;}
+            }
+
+            .right{    padding: 36px 3px 0 0;
+                p{font:400 19px/27px 'Lato'; color:#4f4f4f;}
+                a{font:700 30px/30px 'Lato'; color:#4f4f4f; text-decoration: none;}
+            }
+            .item{ display: inline-block; vertical-align: top;}
+        }
+
+        .butter-wrap-foot{ position: absolute;   left: calc(50% - 23px); z-index:999;          top: 0px; display: none;}
+        .butter-foot{background-color: #9b1915; position: absolute;  width: 42px; height: 36px; cursor: pointer; transition: all 300ms;
+            p{ padding: 0; margin: 0; height: 4px; width: 30px; background-color: #fff; position: absolute; display: block; left: 6px; opacity:1; transform: rotate(0deg); transition: all 300ms;
+                &:nth-child(1){ top: 6px;}
+                &:nth-child(2){ top: 16px;}
+                &:nth-child(3){ top: 26px;}
+            }
+            &:hover{ background-color: #4E1E1D;}
+            &.active{
+                p{
+                    &:nth-child(1){  transform: rotate(405deg);top: 16px; }
+                    &:nth-child(2){  transform: rotate(360deg); opacity:0;}
+                    &:nth-child(3){  transform: rotate(315deg);top: 16px;}
+                }
+            }
+        }
+        nav{ background-color: #9b1915; width: 100%; text-align: center;
+
+            ul{ margin: 0;     padding: 0; list-style-type: none; display: inline-block;}
+            li{ display: inline-block; vertical-align: top;  position: relative; margin-left: -4px;
+                &:first-child{
+                    a{padding-left: 0;}
+                }
+                &:last-child{
+                    a{padding-right: 0;
+                        &:before{ display: none;}
+                    }
+                }
+                &.active{a>span:before { transform: scaleX(1); }}
+            }
+            a{font: 700 14px/14px 'Lato'; color: #fff; text-decoration: none; text-transform: uppercase; width: 100%; padding: 28px 22px;height: 70px; display: block; position: relative;
+                &:before{content:''; position: absolute; display: block; width: 2px; height: 35px; background-color: #af4744; right: 0; top: 16px;}
+                span {  position: relative; padding: 0 12px;
+                    &:before { content: ''; position: absolute; display: block; width: 100%; background-color: #fff; height: 4px; bottom: -10px; transform: scaleX(0); transition: transform 300ms; }
+
+                }
+                &.active,
+                &:hover {
+                    span:before { transform: scaleX(1); }
+                }
+            }
+        }
+        .copyright{font: 400 14px/14px 'Lato'; color: #444; text-align: center; height: 35px; background-color: #e8e8e8; padding-top: 9px;}
+    }
+/*END footer*/
