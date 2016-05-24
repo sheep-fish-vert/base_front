@@ -1,3 +1,5 @@
+
+
 function butter(butter, navmenu) {
         butter.click(function () {
             $(this).toggleClass('active');
@@ -22,11 +24,62 @@ function buterMissClick (menuMobile,toggleMenu) {
 }
 
 
+function initMap() {
+    var styles = [
+        {
+            stylers: [
+
+                { saturation: -50 }
+            ]
+        },{
+            featureType: "road",
+            elementType: "geometry",
+            stylers: [
+                { lightness: 50 },
+                { visibility: "simplified" }
+            ]
+        },{
+            featureType: "road",
+            elementType: "labels",
+            stylers: [
+                { visibility: "off" }
+            ]
+        }
+    ];
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 10,
+        zoomControl: true,
+        zoomControlOptions: {
+            position: google.maps.ControlPosition.LEFT_CENTER
+        },
+        streetViewControl: false,
+        scaleControl: false,
+        scrollwheel: false,
+        navigationControl: false,
+        mapTypeControl: false,
+        draggable: true,
+        center: centerMap,
+        styles: styles
+    });
+
+    var marker = new google.maps.Marker({
+        position: markerPosition,
+        map: map,
+        icon: '../images/marker.png'
+    });
+
+
+
+
+
+}
+
 $(document).ready(function(){
     butter($('.butter'), $('header nav'));
     buterMissClick($('.butter'), $('header nav'));
     butter($('.butter-foot'), $('footer nav'));
     buterMissClick($('.butter-foot'), $('footer nav'));
+    initMap();
 });
 
 $(window).load(function(){
