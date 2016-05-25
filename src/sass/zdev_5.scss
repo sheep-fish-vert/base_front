@@ -171,6 +171,9 @@
 /*breadcrumbs*/
 .main{ position: relative;}
     .breadcrumbs{color:#e18c44; font: 700 16px/20px 'Lato'; position: absolute; width: 100%; top: 10px; z-index:2;
+        &.reverse{
+            a{color: #4f4f4f;}
+        }
         a{color:#fff; text-decoration: none;}
     }
 /*END breadcrumbs*/
