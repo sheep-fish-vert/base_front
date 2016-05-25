@@ -250,14 +250,18 @@
     }
 /*END p5b2*/
 /*p5b1*/
-    .p5b1{ color: #4f4f4f;    padding-top: 81px;
+    .p5b1{ color: #4f4f4f;    padding-top: 79px;
         .title{
-            h2{ margin: 0;font: 400 36px/36px 'lato';}
-            p{ font: 400 20px/20px 'lato';}
+            h2{ margin: 0;font: 400 36px/41px 'lato';}
+            p{ font: 400 20px/20px 'lato'; margin-bottom: 14px;}
         }
-        .subtitle{font: 700 24px/24px 'lato'; background-color: #e8e8e8;}
-        .txt{font: 400 16px/20px 'lato';
-            ul{list-style-type: none;}
+        .subtitle{font: 700 24px/24px 'lato'; background-color: #e8e8e8; padding: 23px 0;     margin-bottom: 28px;
+            h4{ margin: 0;}
+        }
+        .txt{font: 400 16px/24px 'lato';padding-bottom: 38px;
+            ul{list-style-type: none; padding-left: 17px;}
+            ol{ padding-left: 17px;}
+            p{margin:0; padding:12px 0;}
         }
     }
 /*END p5b1*/
