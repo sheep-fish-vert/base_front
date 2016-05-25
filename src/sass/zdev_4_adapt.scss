@@ -41,6 +41,20 @@
         .errorText{}
     }
 
+    // p4b1
+    .p4b1{padding-top: 60px;border-top:1px solid #9b1915;
+        .title{font-size: 33px;margin-bottom: 30px;}
+        .items_wrap{
+            .item{padding-top: 15px;margin-bottom: 15px;
+                .item-title{font-size: 16px;}
+                .item-text{font-size: 14px;line-height: 18px;}
+            }
+        }
+        .button_show_more{display: block;margin-bottom: 30px;}
+    }
+    .paginator{display: none;}
+
+
 }
 @media screen and (max-width: 992px){
     // page 3 block 1
