@@ -48,7 +48,7 @@
 }
 
 // contact form
-.contact-form{max-width: 1125px;margin:0 auto;display: flex;align-content:center;justify-content:center;
+.contact-form,.contact-form-next{max-width: 1125px;margin:0 auto;display: flex;align-content:center;justify-content:center;
     .contact-form-row{display: flex;}
 
     .contact-form-item{margin: 0 15px;position: relative;}
@@ -84,7 +84,7 @@
 
 .page3_form{width: 50%;
     .page3_form_wrap{width: 100%;max-width: 460px;margin:0 auto;padding: 35px;background-color: rgba(0,0,0, .7);border:3px solid rgba(136,136,136, .7);border-radius: 10px;}
-    .contact-form{flex-direction: column;
+    .contact-form,.contact-form-next{flex-direction: column;
         .contact-form-row{align-items: center;justify-content: center;align-items: center;justify-content: center;flex-direction: column;}
         .contact-form-item{margin: 0 15px 30px;}
         input,button[type=submit]{width: 350px;}
@@ -97,3 +97,20 @@
     }
 }
 
+// page 3 block 1
+.page3_block_4{background-image: url(../images/page3_block_4.jpg);background-size: cover;overflow: hidden;background-position: center center;background-repeat: no-repeat;
+    .mbox{min-height: 820px;display: flex;align-items:center;justify-content:center;flex-direction:row;flex-wrap: wrap;align-content:center;
+        &:after{display: none;}
+    }
+    .page3_description{width: 50%;}
+    .title{width: 100%;text-align: center;font-family: 'MetaPro';color: white;margin-bottom: 80px;
+        h2{font-size: 43px;margin: 0;line-height: 1.2;text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.35);}
+    }
+
+    .page3_description{
+        ul{list-style-type: none;margin:0;padding: 0;}
+        li{padding-left: 25px;border-left: 2px solid #7b502b;min-height: 56px;display: flex;align-items:center;justify-content:flex-start;padding: 30px 50px;margin:0;background-color: rgba(0,0,0, .7);border:3px solid rgba(136,136,136, .7);border-radius: 10px;margin-bottom: 4px;
+            p{padding-left: 25px;border-left: 2px solid #7b502b;min-height: 56px;display: flex;align-items:center;justify-content:flex-start;font-size: 18px;color: white;margin:0;line-height: 1.2;}
+        }
+    }
+}
