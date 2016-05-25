@@ -263,13 +263,40 @@ function someAjax(item, someUrl, successFunc, someData){
 
 */
 
+
+function showMoreItem(){
+  $(document).on('click', '.button_show_more .wrap', function(event) {
+    event.preventDefault();
+    var button = $(this).parent();
+    var id = button.data('id');
+
+    $.ajax({
+      url: showMoreItem,
+      type: 'POST',
+      data: id
+    })
+    .done(function(data) {
+      button.remove();
+      $('.p4b1 .items_wrap').append(data);
+    })
+    .fail(function() {
+      console.log("error");
+      alert('Ошибка загрузки');
+    });
+
+  });
+}
+
+
+
+
 $(document).ready(function(){
+    showMoreItem();
+    validate('#call-popup .contact-form', {submitFunction:validationCall});
+    validate('form.contact-form', {submitFunction:validationCall});
+    validate('form.contact-form-next', {submitFunction:validationCall});
 
-   validate('#call-popup .contact-form', {submitFunction:validationCall});
-   validate('form.contact-form', {submitFunction:validationCall});
-   validate('form.contact-form-next', {submitFunction:validationCall});
-
-   Maskedinput();
-   fancyboxForm();
+    Maskedinput();
+    fancyboxForm();
 
 });
