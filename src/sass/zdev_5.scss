@@ -195,3 +195,38 @@
         }
     }
 /*END p2b4*/
+/*p2b4*/
+    .p3b2 { background-image: url(../images/p3b2bg.jpg); background-size: cover; background-position: center top; min-height: 740px;
+        .title { font: 800 29px/50px 'MetaPro'; text-align: center; width: 100%; color: #fff; padding-top: 95px; margin: 0 auto 96px;
+            h2 {margin: 0;}
+        }
+
+        .items-wrap{ display: flex; justify-content: space-around; flex-wrap: wrap; }
+        .item{max-width: 396px; width: 100%; display: inline-block; vertical-align: top;     padding-bottom: 61px;
+            .img{}
+            .txt{ background-color: rgba(31, 31, 31, 0.63); height: 135px; border-radius: 0 0 10px 10px; display: flex; align-items: center; text-align: center;
+                p{ margin: 0; max-width: 316px; display: block; margin: 0 auto;font: 400 18px/22px 'Lato'; color: #fff; }
+            }
+        }
+    }
+/* End p2b4*/
+/*p3b3*/
+    .p3b3 { background-image: url(../images/p3b3bg.png); background-size: cover; background-position: center top; min-height: 875px;
+        .title { font: 800 29px/50px 'MetaPro'; text-align: center; width: 100%; color: #4f4f4f; padding-top: 95px; margin: 0 auto 96px;
+            h2 {    margin: 0 auto;  max-width: 750px;}
+        }
+        .items-wrap{ display: flex; justify-content: space-around; flex-wrap: wrap; }
+        .item{max-width: 380px; width: 100%; display: inline-block; vertical-align: top;     padding-bottom: 61px;
+            .img{}
+            .txt{ background-color: #fff; height: 89px; border-radius: 0 0 10px 10px; display: flex; align-items: center; text-align: center; box-shadow: inset 0px 0px 16px -4px rgba(0,0,0,0.75);
+                p{ margin: 0; max-width: 300px; display: block; margin: 0 auto; font: 400 18px/22px 'Lato'; color: #4f4f4f; }
+            }
+        }
+        .button-wrap{ position: relative; z-index:100;padding: 0 0 30px;
+            a{ display: block; text-transform: uppercase; font: 700 18px/18px 'Lato'; color: #4f4f4f; text-decoration: none; text-align: center;max-width: 355px; height: 74px; border:5px solid #e18c44; border-radius: 9px; margin: 0 auto; padding-top: 22px;
+                &:hover{ background: #e18c44;}
+            }
+        }
+    }
+/* End p3b3*/
+
