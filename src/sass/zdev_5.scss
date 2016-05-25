@@ -206,7 +206,7 @@
         }
 
         .items-wrap{ display: flex; justify-content: space-around; flex-wrap: wrap; }
-        .item{max-width: 396px; width: 100%; display: inline-block; vertical-align: top;     padding-bottom: 61px;
+        .item{width: 396px;  display: inline-block; vertical-align: top;     padding-bottom: 61px;
             .img{}
             .txt{ background-color: rgba(31, 31, 31, 0.63); height: 135px; border-radius: 0 0 10px 10px; display: flex; align-items: center; text-align: center;
                 p{ margin: 0; max-width: 316px; display: block; margin: 0 auto;font: 400 18px/22px 'Lato'; color: #fff; }
@@ -220,7 +220,7 @@
             h2 {    margin: 0 auto;  max-width: 750px;}
         }
         .items-wrap{ display: flex; justify-content: space-around; flex-wrap: wrap; }
-        .item{max-width: 380px; width: 100%; display: inline-block; vertical-align: top;     padding-bottom: 61px;
+        .item{width: 380px;  display: inline-block; vertical-align: top;     padding-bottom: 61px;
             .img{}
             .txt{ background-color: #fff; height: 89px; border-radius: 0 0 10px 10px; display: flex; align-items: center; text-align: center; box-shadow: inset 0px 0px 16px -4px rgba(0,0,0,0.75);
                 p{ margin: 0; max-width: 300px; display: block; margin: 0 auto; font: 400 18px/22px 'Lato'; color: #4f4f4f; }
