@@ -6,7 +6,7 @@ jQuery.browser.msie = /msie/.test(navigator.userAgent.toLowerCase());
 
 var scroller=jQuery.browser.webkit ? "body": "html";
 
-$.scrollbarWidth=function(){var a,b,c;if(c===undefined){a=$('<div style="width:50px;height:50px;overflow:auto"><div/></div>').appendTo('body');b=a.children();c=b.innerWidth()-b.height(99).innerWidth();a.remove()}return c};
+$.scrollbarWidth=function(){var a,b,c;if(c===undefined){a=$('<div style="width:50px;height:50px;overflow:auto"><div/></div>').appendTo('body');b=a.children();c=b.innerWidth()-b.height(99).innerWidth();a.remove();}return c;};
 
 
 /* scrollUp */
@@ -16,9 +16,8 @@ function scrollUp(block,targetBlock) {
         var target = $(targetBlock).offset().top;
 
         $(scroller).stop().animate({scrollTop:target},800);
-        return false;
-
         e.preventDefault();
+        return false;
     });
 }
 
@@ -149,6 +148,7 @@ function headeButer(menuMobile,toggleMenu){
 /* DOCUMENT READY  */
 $(document).ready(function() {
     //oneHeightItems();
+    scrollUp('.slider-arrow','.index_block_2')
     $('.footer_placeholder').height($('.footer').outerHeight());
 
     //goTo();
