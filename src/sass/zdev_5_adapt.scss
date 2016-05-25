@@ -4,8 +4,12 @@
 @media screen and (max-width: 1600px){
 
 }
-@media screen and (max-width: 1366px){
-
+@media screen and (max-width: 1220px){
+    /*p5b2*/
+    .p5b2{
+        .info-map{ right:auto; left: 48px;}
+    }
+    /*END p5b2*/
 }
 @media screen and (max-width: 1180px){
     /*heder*/
@@ -122,6 +126,14 @@
             .title{  font: 800 18px/33px 'MetaPro';}
         }
     /*END p3b2*/
+    /*p5b2*/
+    .p5b2{ height: 100vh;
+        .info-map { left: 0; border-radius: 0; max-width: none; top: 40px; padding: 10px; min-height: 1px;
+            .title-map { margin: 0; padding: 0; }
+            td:first-child { padding-left: 0; width: 122px; }
+        }
+    }
+    /*END p5b2*/
 
 }
 @media screen and (max-width: 479px){

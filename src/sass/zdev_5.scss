@@ -135,8 +135,9 @@
     }
 /*END footer*/
 /*index-map*/
+#map{ width: 100%;height: 100%;}
     .index-map{ width: 100%; height: 650px; position: relative;
-        #map{ width: 100%;height: 100%;}
+
         .title-map-wrap{padding: 0 20px;position: absolute; top: 69px;z-index: 100;width: 100%; }
         .title-map{font: 800 43px/43px 'MetaPro'; color: #4f4f4f; text-align: center;  max-width: 700px; height: 100px; background-color: #fff; border-radius:50px; margin: 0 auto;     padding-top: 29px; box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);}
 }
@@ -229,4 +230,32 @@
         }
     }
 /* End p3b3*/
+/*p5b2*/
+    .p5b2{width: 100%; height: 650px; position: relative;
+
+        .info-map{ max-width: 500px; min-height: 350px; background-color: rgba(255,255,255,0.9); border-radius: 10px; box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75); position: absolute; right: 55%; top: 150px; width: 100%; padding: 43px;
+            .title-map{font: 800 50px/50px 'MetaPro'; color: #4f4f4f;    letter-spacing: 1px; text-align: center; padding: 2px 0 15px; margin-bottom: 26px; border-bottom: 1px solid #e8e8e8;
+                h5{ margin: 0;}
+            }
+            table{}
+            tr{}
+            td{font: 700 16px/16px 'lato'; color:#4f4f4f; height: 40px;
+                &:first-child{ font-weight: 400;padding-left: 18px;    width: 143px;}
+            }
+        }
+
+    }
+/*END p5b2*/
+/*p5b1*/
+    .p5b1{ color: #4f4f4f;    padding-top: 81px;
+        .title{
+            h2{ margin: 0;font: 400 36px/36px 'lato';}
+            p{ font: 400 20px/20px 'lato';}
+        }
+        .subtitle{font: 700 24px/24px 'lato'; background-color: #e8e8e8;}
+        .txt{font: 400 16px/20px 'lato';
+            ul{list-style-type: none;}
+        }
+    }
+/*END p5b1*/
 
