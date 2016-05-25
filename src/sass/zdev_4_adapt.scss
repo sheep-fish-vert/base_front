@@ -37,9 +37,21 @@
         .contact-form-row{align-items: center;justify-content: center;align-items: center;justify-content: center;flex-direction: column;}
         .contact-form-item{margin: 0 15px 30px;}
         input,button[type=submit]{width: 260px;}
-        button[type=submit]{}
-        .errorText{}
     }
+
+    // p4b1
+    .p4b1{padding-top: 60px;border-top:1px solid #9b1915;
+        .title{font-size: 33px;margin-bottom: 30px;}
+        .items_wrap{
+            .item{padding-top: 15px;margin-bottom: 15px;
+                .item-title{font-size: 16px;}
+                .item-text{font-size: 14px;line-height: 18px;}
+            }
+        }
+        .button_show_more{display: block;margin-bottom: 30px;}
+    }
+    .paginator{display: none;}
+
 
 }
 @media screen and (max-width: 992px){
@@ -51,25 +63,12 @@
         }
     }
 
-    .page3_form{width: 100%;
-        .page3_form_wrap{}
-        .contact-form{
-            .contact-form-row{}
-            .contact-form-item{}
-            input,button[type=submit]{}
-            button[type=submit]{}
-        }
-        .contact-form-title{
-            h5{}
-            span{}
-        }
-    }
+    .page3_form{width: 100%;}
 
 
     // page 3 block 4
     .page3_block_4{padding: 50px 0px;
         .mbox{min-height: auto;}
-        .page3_description{}
         .title{padding-top: 20px;margin-bottom: 30px;font-size: 39px;
             h2{font-size: 39px;}
         }
@@ -87,14 +86,6 @@
             h2{font-size: 39px;}
         }
         .item-wrap{flex-wrap:wrap;flex-direction:column;
-            .item{
-                &.last-item{
-                    input{}
-                }
-
-                p{}
-                input{}
-            }
             .item-icon{position: relative;transform: none;left: auto;bottom:auto;margin:20px 0px;}
         }
     }
@@ -113,7 +104,6 @@
                 }
             }
         }
-        .slider-arrow{}
         .slick-dots{bottom: 40px;}
     }
 
@@ -137,10 +127,7 @@
     .page3_form{width: 100%;
         .page3_form_wrap{padding: 15px 0px 0px;}
         .contact-form,.contact-form-next{
-            .contact-form-row{}
-            .contact-form-item{}
             input,button[type=submit]{width: 260px;}
-            button[type=submit]{}
         }
         .contact-form-title{font-size: 25px;}
     }
@@ -170,7 +157,7 @@
             }
         }
         .slider-arrow{display: none;}
-        .slick-dots{    justify-content: center;}
+        .slick-dots{justify-content: center;}
     }
 
     // index block 2

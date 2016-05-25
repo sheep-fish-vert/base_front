@@ -271,7 +271,7 @@ function showMoreItem(){
     var id = button.data('id');
 
     $.ajax({
-      url: showMoreItem,
+      url: showMoreIteM,
       type: 'POST',
       data: id
     })
