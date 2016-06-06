@@ -194,6 +194,8 @@ function popNext(popupId, popupWrap){
 function Maskedinput(){
     if($('.tel-mask')){
         $('.tel-mask').mask('+9 (999) 999-99-99 ');
+        $('.index_block_2_form input[name="contact_tel"]').mask('+9 (999) 999-99-99 ');
+        $('.page3_form_wrap input[name="contact_tel"]').mask('+9 (999) 999-99-99 ');
     }
 }
 
@@ -207,7 +209,7 @@ function fancyboxForm(){
     'closeBtn' : true,
     fitToView:true,
     padding:'0'
-  })
+  });
 }
 
 //ajax func for programmer
