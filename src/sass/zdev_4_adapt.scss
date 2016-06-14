@@ -15,6 +15,9 @@
     .index_block_1{
         .index_block_1_slider{
             .item{min-height: 700px;
+                &.item-2{align-items: center;justify-content: center;
+                    .item-tile{text-align: center;}
+                }
                 .item-tile{
                     h2{font-size: 52px;}
                 }
