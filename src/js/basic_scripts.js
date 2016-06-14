@@ -148,9 +148,12 @@ function headeButer(menuMobile,toggleMenu){
 /* DOCUMENT READY  */
 $(document).ready(function() {
     //oneHeightItems();
-    scrollUp('.slider-arrow','.index_block_2');
-    scrollUp('.p2b1 .button-wrap a','.index_block_2');
-    scrollUp('.p3b3 .button-wrap a','.page3_block_4');
+
+    //scrollUp('.slider-arrow','.index_block_2');
+    //scrollUp('.p2b1 .button-wrap a','.index_block_2');
+    //scrollUp('.p3b3 .button-wrap a','.page3_block_4');
+
+    scrollUp('.scroll-from', '.scroll-to');
 
     scrollUp('.index_block_1 .slider-button','.index_block_2');
 
